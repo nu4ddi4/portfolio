@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#f6f5f1"/><text x="70" y="90" font-family="Arial,sans-serif" font-size="20" fill="#d9431d">DONGYEOP LIM / PERSONAL PORTFOLIO</text><text x="66" y="270" font-family="Arial,sans-serif" font-weight="600" font-size="95" letter-spacing="-5" fill="#22231f">Ideas into</text><text x="66" y="375" font-family="Georgia,serif" font-style="italic" font-size="112" letter-spacing="-5" fill="#22231f">something</text><text x="66" y="480" font-family="Arial,sans-serif" font-weight="600" font-size="95" letter-spacing="-5" fill="#22231f">that matters<tspan fill="#d9431d">.</tspan></text><g fill="#d9431d" transform="translate(840 215)"><rect x="90" width="26" height="205" rx="13"/><rect y="90" width="205" height="26" rx="13"/><rect x="90" width="26" height="205" rx="13" transform="rotate(45 103 103)"/><rect x="90" width="26" height="205" rx="13" transform="rotate(-45 103 103)"/></g><path d="M70 550h1060" stroke="#d9dad2"/><text x="70" y="590" font-family="Arial,sans-serif" font-size="13" letter-spacing="2" fill="#74756f">FEENTN.COM · THOUGHTFUL DESIGN. PURPOSEFUL CODE.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f8f7f4"/>
+  <text x="100" y="115" fill="#252622" font-family="Arial,sans-serif" font-size="32" font-weight="600">feentn<tspan fill="#b94627">.</tspan></text>
+  <text x="96" y="295" fill="#252622" font-family="Arial,sans-serif" font-size="80" font-weight="600">Dongyeop Lim<tspan fill="#b94627">.</tspan></text>
+  <text x="100" y="357" fill="#6b6d63" font-family="Arial,sans-serif" font-size="26">Personal projects, made with curiosity.</text>
+  <path d="M100 465H1100" stroke="#dfdfd6"/>
+  <text x="100" y="525" fill="#6b6d63" font-family="Arial,sans-serif" font-size="21">MVNO / ani.feentn.com</text>
+</svg>
