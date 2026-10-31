@@ -26,7 +26,7 @@ npm run preview
 - `public/app.js`의 `visuals`: MVNO와 GitHub의 프로젝트 커버. 실제 화면 스크린샷을 쓰려면 프로젝트에 `image`를 지정하세요.
 - `public/assets/social.svg`: 공유 이미지 원본. `social.png`는 1200×630으로 렌더링한 공유 이미지입니다.
 
-현재 이름은 **임동엽**, GitHub는 **nu4ddi4**, 첫 프로젝트는 **MVNO**입니다. 이메일을 설정하기 전까지 연락 섹션은 GitHub 프로필로 연결됩니다. 프로젝트 링크는 `url`, 저장소는 `repository`에 넣으면 상세 창에 표시됩니다. 도메인이 변경되면 `profile.siteUrl`과 `public/sitemap.xml`, `public/robots.txt`도 수정하세요.
+현재 이름은 **임동엽**, GitHub는 **nu4ddi4**, 웹 프로젝트는 **MVNO**와 **감상 서가**입니다. 이메일을 설정하기 전까지 연락 섹션은 GitHub 프로필로 연결됩니다. 프로젝트 링크는 `url`, 저장소는 `repository`에 넣으면 상세 창에 표시됩니다. 도메인이 변경되면 `profile.siteUrl`과 `public/sitemap.xml`, `public/robots.txt`도 수정하세요.
 
 ### 프로젝트 추가
 
@@ -35,7 +35,7 @@ npm run preview
 ```js
 {
   id: 'new-project',
-  number: '03',
+  number: '04',
   title: '새 프로젝트',
   subtitle: '프로젝트를 설명하는 한 문장.',
   category: 'web',
