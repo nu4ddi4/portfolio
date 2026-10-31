@@ -1,6 +1,6 @@
 # 임동엽 · Portfolio
 
-이름, 한 줄 소개, 프로젝트 목록과 GitHub 링크만 담은 개인 포트폴리오입니다.
+간결한 소개와 프로젝트 이미지 카드, 짧은 자기소개를 담은 개인 포트폴리오입니다.
 
 - 사이트: https://feentn.com
 - 프로젝트: MVNO, 감상 서가
@@ -24,13 +24,14 @@ npm run preview
 
 ## 내용 수정
 
-`public/content.js`에서 이름, 한 줄 소개, GitHub 주소와 프로젝트 목록을 수정하세요. 프로젝트는 다음 형식으로 `projects` 배열에 추가합니다.
+`public/content.js`에서 이름, 소개, GitHub 주소와 프로젝트 목록을 수정하세요. 프로젝트는 다음 형식으로 `projects` 배열에 추가합니다.
 
 ```js
 {
   id: 'new-project',
   title: '새 프로젝트',
   description: '핵심을 설명하는 한 문장.',
+  image: '/assets/new-project.webp', // 선택 사항. public/assets/에 이미지 추가
   url: 'https://example.com',
 }
 ```
