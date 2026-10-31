@@ -1,6 +1,6 @@
 # 임동엽 · Portfolio
 
-간결한 소개와 프로젝트 이미지 카드, 짧은 자기소개를 담은 개인 포트폴리오입니다.
+간결한 인사말과 프로젝트 이미지 카드, 별도의 소개 탭을 담은 개인 포트폴리오입니다.
 
 - 사이트: https://feentn.com
 - 프로젝트: MVNO, 감상 서가
@@ -36,9 +36,10 @@ npm run preview
 }
 ```
 
-이름과 프로젝트는 빌드 시 HTML에 반영됩니다. 브라우저 JavaScript 없이도 모든 내용과 링크를 사용할 수 있습니다.
+이름과 프로젝트는 빌드 시 HTML에 반영됩니다. 프로젝트·소개 탭은 클릭과 방향키로 전환하며, `#work`와 `#about` 주소 및 브라우저 뒤로 가기를 지원합니다. JavaScript가 꺼져 있으면 두 섹션이 순서대로 표시됩니다.
 
 - `public/index.html`: 페이지 구성과 메타데이터.
+- `public/tabs.js`: 탭 전환과 키보드 탐색.
 - `public/styles.css`: 색, 글꼴, 반응형 레이아웃.
 - `public/assets/social.svg`: 공유 이미지 원본. 수정 후 `social.png`도 1200×630으로 렌더링하세요.
 - 도메인 변경 시 `profile.siteUrl`, `public/sitemap.xml`, `public/robots.txt`도 수정하세요.

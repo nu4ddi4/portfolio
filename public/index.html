@@ -15,6 +15,7 @@
   <link rel="canonical" href="{{siteUrl}}/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
+  <script src="/tabs.js" type="module"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -22,8 +23,10 @@
     <header class="site-header">
       <a class="wordmark" href="/" aria-label="{{name}} 홈"><img src="/assets/favicon.svg" width="30" height="30" alt="">{{name}}</a>
       <nav aria-label="주 메뉴">
-        <a href="#work">프로젝트</a>
-        <a href="#about">소개</a>
+        <div class="page-tabs" aria-label="포트폴리오 섹션">
+          <a id="tab-work" href="#work" data-panel="work">프로젝트</a>
+          <a id="tab-about" href="#about" data-panel="about">소개</a>
+        </div>
         <a href="{{github}}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
       </nav>
     </header>
@@ -31,10 +34,8 @@
     <main id="main">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <p class="greeting">안녕하세요, {{name}}입니다.</p>
-          <h1 id="intro-title">생각에서 시작해,<br>직접 만들어갑니다<span>.</span></h1>
+          <h1 id="intro-title">안녕하세요, {{name}}입니다<span>.</span></h1>
           <p class="intro-description">{{intro}}</p>
-          <a class="intro-link" href="#work">프로젝트 살펴보기 <span aria-hidden="true">↘</span></a>
         </div>
         <div class="intro-art" aria-hidden="true">
           <svg viewBox="0 0 240 240" fill="none">
@@ -49,15 +50,21 @@
         </div>
       </section>
 
+      <div class="tab-panels">
       <section class="projects" id="work" aria-labelledby="work-title">
         <div class="section-heading"><h2 id="work-title">선택한 작업<span>.</span></h2><p>직접 만든 웹 프로젝트입니다.</p></div>
         <ul class="project-list">{{projects}}</ul>
       </section>
 
       <section class="about" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">만들면서 배우고,<br>조금씩 다듬습니다.</h2>
-        <p>{{about}}</p>
+        <div class="section-heading"><h2 id="about-title">소개<span>.</span></h2></div>
+        <div class="about-content">
+          <h3>{{name}}</h3>
+          <p>{{about}}</p>
+          <a class="about-github" href="{{github}}" target="_blank" rel="noopener noreferrer">GitHub에서 코드 보기 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
+        </div>
       </section>
+      </div>
     </main>
 
     <footer class="site-footer">
