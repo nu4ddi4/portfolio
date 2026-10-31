@@ -52,7 +52,20 @@ npm run preview
 
 `image`와 `visual`이 없으면 프로젝트 이름을 담은 기본 커버가 표시됩니다.
 
-## Cloudflare Pages 연결
+## Cloudflare Pages 배포
+
+현재 배포는 Pages의 Advanced Mode 직접 배포를 사용합니다. GitHub 연동 설치 오류 때문에 저장소 자동 배포는 아직 연결되지 않았습니다. `main` 브랜치에 코드를 올리는 것만으로는 사이트가 갱신되지 않습니다.
+
+같은 정적 파일을 하나의 Pages 서버 번들로 묶어 배포할 수 있습니다. 빌드 시 자산과 보안 헤더를 포함하므로 별도 데이터베이스나 비밀 키가 필요하지 않습니다.
+
+```sh
+npm run build:pages
+npx wrangler pages deploy dist-pages --project-name=nu4ddi4-portfolio
+```
+
+`dist-pages/`는 생성 결과이므로 Git에 저장하지 않습니다. 일반 정적 출력은 기존처럼 `npm run build` → `dist/`입니다.
+
+### Git 자동 배포 연결
 
 GitHub/GitLab 저장소 연결 방식:
 
