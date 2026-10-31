@@ -54,9 +54,9 @@ npm run preview
 
 ## Cloudflare Pages 배포
 
-현재 배포는 Pages의 Advanced Mode 직접 배포를 사용합니다. GitHub 연동 설치 오류 때문에 저장소 자동 배포는 아직 연결되지 않았습니다. `main` 브랜치에 코드를 올리는 것만으로는 사이트가 갱신되지 않습니다.
+GitHub 저장소 `nu4ddi4/portfolio`의 `main` 브랜치가 Cloudflare Pages 프로젝트 `nu4ddi4-portfolio`에 연결되어 있습니다. 변경을 push하면 `npm run build`로 빌드한 `dist/`가 자동 배포되어 https://feentn.com 에 반영됩니다.
 
-같은 정적 파일을 하나의 Pages 서버 번들로 묶어 배포할 수 있습니다. 빌드 시 자산과 보안 헤더를 포함하므로 별도 데이터베이스나 비밀 키가 필요하지 않습니다.
+수동 배포가 필요하면 같은 정적 파일을 하나의 Pages 서버 번들로 묶어 배포할 수도 있습니다. 빌드 시 자산과 보안 헤더를 포함하므로 별도 데이터베이스나 비밀 키가 필요하지 않습니다.
 
 ```sh
 npm run build:pages
