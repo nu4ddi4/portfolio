@@ -7,6 +7,7 @@
   <meta name="description" content="{{description}}">
   <meta name="theme-color" content="#f6f5f1">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{siteName}}">
   <meta property="og:title" content="{{title}}">
   <meta property="og:description" content="{{description}}">
   <meta property="og:url" content="{{siteUrl}}">
@@ -21,7 +22,7 @@
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
   <div class="page">
     <header class="site-header">
-      <a class="wordmark" href="/" aria-label="{{name}} 홈"><img src="/assets/favicon.svg" width="30" height="30" alt="">{{name}}</a>
+      <a class="wordmark" href="/" aria-label="{{siteName}} 홈"><img src="/assets/favicon.svg" width="30" height="30" alt="">{{siteName}}</a>
       <nav aria-label="주 메뉴">
         <div class="page-tabs" aria-label="포트폴리오 섹션">
           <a id="tab-work" href="#work" data-panel="work">프로젝트</a>
@@ -34,7 +35,7 @@
     <main id="main">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <h1 id="intro-title">안녕하세요, {{name}}입니다<span>.</span></h1>
+          <h1 id="intro-title">{{title}}<span>.</span></h1>
           <p class="intro-description">{{intro}}</p>
         </div>
         <div class="intro-art" aria-hidden="true">
@@ -59,7 +60,7 @@
       <section class="about" id="about" aria-labelledby="about-title">
         <div class="section-heading"><h2 id="about-title">소개<span>.</span></h2></div>
         <div class="about-content">
-          <h3>{{name}}</h3>
+          <h3>안녕하세요, {{name}}입니다.</h3>
           <p>{{about}}</p>
           <a class="about-github" href="{{github}}" target="_blank" rel="noopener noreferrer">GitHub에서 코드 보기 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
         </div>
@@ -68,7 +69,7 @@
     </main>
 
     <footer class="site-footer">
-      <span>© {{year}} {{name}} · feentn.com</span>
+      <span>© {{year}} {{siteName}}</span>
       <a href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
     </footer>
   </div>
