@@ -2,7 +2,7 @@
   <rect width="1200" height="630" fill="#f8f7f4"/>
   <text x="100" y="115" fill="#252622" font-family="Arial,sans-serif" font-size="32" font-weight="600">feentn.com</text>
   <text x="96" y="295" fill="#252622" font-family="Arial,sans-serif" font-size="80" font-weight="600">포트폴리오<tspan fill="#b94627">.</tspan></text>
-  <text x="100" y="357" fill="#6b6d63" font-family="Arial,sans-serif" font-size="26">직접 만든 웹 프로젝트를 소개합니다.</text>
+  <text x="100" y="357" fill="#6b6d63" font-family="Arial,sans-serif" font-size="26">직접 만든 서비스와 게임을 소개합니다.</text>
   <path d="M100 465H1100" stroke="#dfdfd6"/>
-  <text x="100" y="525" fill="#6b6d63" font-family="Arial,sans-serif" font-size="21">MVNO / ani.feentn.com</text>
+  <text x="100" y="525" fill="#6b6d63" font-family="Arial,sans-serif" font-size="21">감상 서가 / 파일 서버 / 한 번만 더! / 김 대리, 나 좀 밀어봐</text>
 </svg>

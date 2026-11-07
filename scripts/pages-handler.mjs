@@ -15,7 +15,8 @@ export function createHandler(input, securityHeaders) {
       let path;
       try { path = decodeURIComponent(new URL(request.url).pathname); }
       catch { return new Response('Bad request', { status: 400, headers: securityHeaders }); }
-      if (path === '/') path = '/index.html';
+      if (path.endsWith('/')) path += 'index.html';
+      else if (files.has(`${path}/index.html`)) path += '/index.html';
       const match = files.get(path);
       const file = match || files.get('/404.html');
       const status = match ? 200 : 404;

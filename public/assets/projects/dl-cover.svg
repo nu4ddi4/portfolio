@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="600" viewBox="0 0 840 600">
+  <rect width="840" height="600" fill="#dfe6e8"/>
+  <g transform="translate(65 91) rotate(-3 355 210)">
+    <rect width="710" height="420" rx="6" fill="#f1f5f5"/>
+    <path d="M0 38H710" stroke="#d1dbde"/>
+    <g fill="#9aadb2"><circle cx="20" cy="19" r="3"/><circle cx="31" cy="19" r="3"/><circle cx="42" cy="19" r="3"/></g>
+    <text x="355" y="24" fill="#506b75" text-anchor="middle" font-family="Arial,sans-serif" font-size="11">dl.feentn.com</text>
+    <text x="42" y="96" fill="#506b75" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">UPLOAD &amp; DOWNLOAD</text>
+    <text x="38" y="173" fill="#304d59" font-family="Arial,sans-serif" font-size="58" font-weight="600" letter-spacing="-2">File server.</text>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+      <rect x="42" y="214" width="280" height="115" rx="8" stroke="#c4d2d7"/>
+      <path d="M182 293V250M163 269L182 250L201 269" stroke="#506f7d"/>
+      <rect x="341" y="214" width="280" height="115" rx="8" stroke="#c4d2d7"/>
+      <path d="M481 250V293M462 274L481 293L500 274" stroke="#506f7d"/>
+    </g>
+    <path d="M42 364H668" stroke="#d1dbde"/>
+    <text x="42" y="394" fill="#506b75" font-family="Arial,sans-serif" font-size="10" letter-spacing="1">FILES, FROM HERE TO THERE.</text>
+    <text x="668" y="394" fill="#506b75" text-anchor="end" font-family="Arial,sans-serif" font-size="10">feentn.com</text>
+  </g>
+</svg>

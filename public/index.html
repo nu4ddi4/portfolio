@@ -35,8 +35,10 @@
     <main id="main">
       <section class="intro" aria-labelledby="intro-title">
         <div class="intro-copy">
-          <h1 id="intro-title">{{title}}<span>.</span></h1>
+          <p class="eyebrow">PERSONAL PORTFOLIO · SERVICES & GAMES</p>
+          <h1 id="intro-title">필요한 것을 만들고,<br>더 나은 경험으로 다듬습니다<span>.</span></h1>
           <p class="intro-description">{{intro}}</p>
+          <a class="intro-link" href="{{github}}" target="_blank" rel="noopener noreferrer">코드와 작업 기록 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
         </div>
         <div class="intro-art" aria-hidden="true">
           <svg viewBox="0 0 240 240" fill="none">
@@ -53,15 +55,16 @@
 
       <div class="tab-panels">
       <section class="projects" id="work" aria-labelledby="work-title">
-        <div class="section-heading"><h2 id="work-title">선택한 작업<span>.</span></h2><p>직접 만든 웹 프로젝트입니다.</p></div>
+        <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2 id="work-title">직접 만들고 가꾸는 프로젝트<span>.</span></h2></div><p>직접 쓰는 서비스, 직접 즐기는 게임</p></div>
         <ul class="project-list">{{projects}}</ul>
       </section>
 
       <section class="about" id="about" aria-labelledby="about-title">
-        <div class="section-heading"><h2 id="about-title">소개<span>.</span></h2></div>
+        <div class="section-heading"><div><p class="eyebrow">ABOUT</p><h2 id="about-title">만들고, 사용하고, 개선합니다<span>.</span></h2></div></div>
         <div class="about-content">
           <h3>안녕하세요, {{name}}입니다.</h3>
           <p>{{about}}</p>
+          <div class="about-principles"><div><span>01 / 시작</span><h4>필요에서 출발하기</h4><p>일상에서 떠오른 작은 아이디어를 서비스와 게임으로 옮깁니다.</p></div><div><span>02 / 개선</span><h4>직접 쓰며 다듬기</h4><p>사용하면서 발견한 점을 다음 작업에 반영합니다.</p></div></div>
           <a class="about-github" href="{{github}}" target="_blank" rel="noopener noreferrer">GitHub에서 코드 보기 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
         </div>
       </section>

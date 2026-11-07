@@ -6,7 +6,7 @@ import { build, root } from './build.mjs';
 
 await build();
 const directory = resolve(root,'dist');
-const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8','.json':'application/json'};
+const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.xml':'application/xml; charset=utf-8','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8','.json':'application/json'};
 const port = Number(process.env.PORT || 4173);
 const host = process.env.HOST || '0.0.0.0';
 const server = createServer(async (request,response) => {
@@ -24,6 +24,9 @@ const server = createServer(async (request,response) => {
 server.listen(port,host,() => console.log(`Portfolio preview: http://localhost:${port}`));
 let timer;
 let building = Promise.resolve();
-if (!process.argv.includes('--production')) watch(resolve(root,'public'),{recursive:true},() => {
-  clearTimeout(timer); timer=setTimeout(() => { building = building.then(build).catch(console.error); },150);
-});
+if (!process.argv.includes('--production')) {
+  for (const directory of ['public', 'templates']) watch(resolve(root, directory), { recursive: true }, () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { building = building.then(build).catch(console.error); }, 150);
+  });
+}

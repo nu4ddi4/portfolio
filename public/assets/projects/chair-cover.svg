@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#e6dfd6"/>
+  <path d="M0 550H1280M640 420L100 720M820 420L1280 675" stroke="#d7cfc2" stroke-width="2"/>
+  <g font-family="Arial,sans-serif">
+    <text x="86" y="126" fill="#78614c" font-size="17" letter-spacing="4">OFFICE CHAIR GAME</text>
+    <text x="80" y="232" fill="#3c413b" font-size="55" font-weight="600" letter-spacing="-3">김 대리,</text>
+    <text x="80" y="309" fill="#3c413b" font-size="55" font-weight="600" letter-spacing="-3">나 좀 밀어봐<tspan fill="#a95332">.</tspan></text>
+    <text x="85" y="374" fill="#786f62" font-size="19">의자 하나로 시작되는 사무실 물리 코미디</text>
+    <text x="86" y="626" fill="#78614c" font-size="13" letter-spacing="2">3D PHYSICS · SIX MISSIONS</text>
+  </g>
+  <ellipse cx="939" cy="596" rx="204" ry="27" fill="#d3c9bb"/>
+  <g transform="translate(760 128) rotate(8 180 280)" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M177 349V430M177 422L73 462M177 422L274 462M177 422V478M177 422L128 441M177 422L235 438" fill="none" stroke="#707976" stroke-width="16"/>
+    <g fill="#3c4845"><ellipse cx="70" cy="469" rx="16" ry="21"/><ellipse cx="277" cy="469" rx="16" ry="21"/><ellipse cx="177" cy="486" rx="16" ry="21"/><ellipse cx="126" cy="450" rx="13" ry="17"/><ellipse cx="237" cy="447" rx="13" ry="17"/></g>
+    <path d="M142 249V319M238 249V319" stroke="#596660" stroke-width="18"/>
+    <rect x="96" y="66" width="180" height="208" rx="36" fill="#5b6b61"/>
+    <rect x="109" y="80" width="154" height="179" rx="29" fill="#718274"/>
+    <path d="M102 297L85 234H49M254 297L272 234H307" fill="none" stroke="#46534d" stroke-width="13"/>
+    <path d="M85 308Q89 289 112 289H247Q270 289 276 308L284 335Q286 349 263 352H98Q77 350 79 336Z" fill="#46564d"/>
+    <path d="M103 303H249" stroke="#879586" stroke-width="6"/>
+  </g>
+  <g transform="translate(1010 316) rotate(19)">
+    <path d="M0 0H63L54 89H10Z" fill="#b7704f"/>
+    <ellipse cx="31" cy="0" rx="32" ry="9" fill="#f6f1e7"/>
+    <ellipse cx="31" cy="0" rx="25" ry="5" fill="#624b37"/>
+    <path d="M72 36Q109 57 92 88" fill="none" stroke="#a76a44" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="92" cy="105" r="5" fill="#a76a44"/>
+  </g>
+</svg>
