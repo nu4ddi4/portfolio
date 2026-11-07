@@ -34,10 +34,9 @@ export async function build() {
     const url = internal ? project.url : externalURL(project.url);
     const image = assetPath(project.image) ? `<div class="project-visual"><img src="${escape(project.image)}" alt="${escape(project.imageAlt || '')}" width="840" height="600" loading="lazy"></div>` : '';
     const category = project.category ? `<span>${escape(project.category)}</span>` : '';
-    const focus = project.focus ? `<p class="project-focus"><span>작업 주제</span>${escape(project.focus)}</p>` : '';
-    const intention = !internal && project.intention ? `<details class="project-details"><summary>작업 소개 <span aria-hidden="true">+</span></summary><p>${escape(project.intention)}</p></details>` : '';
+    const tags = project.focus ? `<ul class="project-tags" aria-label="작업 주제">${project.focus.split('·').map(tag => `<li>${escape(tag.trim())}</li>`).join('')}</ul>` : '';
     const target = internal ? '' : ' target="_blank" rel="noopener noreferrer"';
-    return `<li class="project"><div class="project-meta"><span>${String(index + 1).padStart(2, '0')}</span>${category}</div><a class="project-link" data-project="${escape(project.id)}" href="${escape(url)}"${target}>${image}<div class="project-heading"><h3>${escape(project.title)}</h3><span class="project-arrow" aria-hidden="true">${internal ? '→' : '↗'}</span></div><p class="project-description">${escape(project.description)}</p><span class="project-domain">${internal ? '더 알아보기' : '프로젝트 방문'} <span aria-hidden="true">${internal ? '→' : '↗'}</span><span>${internal ? '프로젝트 소개' : escape(new URL(url).hostname)}</span></span>${internal ? '' : '<span class="sr-only">새 탭에서 열기</span>'}</a>${focus}${intention}</li>`;
+    return `<li class="project"><a class="project-link" data-project="${escape(project.id)}" href="${escape(url)}"${target}>${image}<div class="project-content"><div class="project-meta"><span>${String(index + 1).padStart(2, '0')}</span>${category}</div><h3>${escape(project.title)}</h3><p class="project-description">${escape(project.description)}</p>${tags}<div class="project-footer"><span>${internal ? '더 알아보기' : '프로젝트 방문'}</span><span class="project-arrow" aria-hidden="true">${internal ? '→' : '↗'}</span></div>${internal ? '' : '<span class="sr-only">새 탭에서 열기</span>'}</div></a></li>`;
   }).join('\n');
   const values = { ...profile, year: new Date().getFullYear() };
   await writeFile(resolve(root, 'dist/index.html'), render(source, values, { projects: projectHTML }));
